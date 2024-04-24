@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/srikanthankamtw/go-test/integers"
+)
 
 const (
 	englishHelloPrefix = "Hello"
@@ -30,4 +33,5 @@ func getLanguage(language string) (languageHelloPrefix string) {
 
 func main() {
 	fmt.Println(Hello("Satya", "Spanish"))
+	fmt.Println(integers.Add(1, 2))
 }
