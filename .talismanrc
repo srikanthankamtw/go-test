@@ -1,0 +1,4 @@
+fileignoreconfig:
+- filename: example/hello_test.go
+  checksum: b5df04c9322759ba248854c1537d36c668c7a4bea5bfcca25ee88ae7693bc483
+version: "1.0"
