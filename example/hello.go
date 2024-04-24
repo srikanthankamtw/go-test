@@ -16,15 +16,16 @@ func Hello(name, language string) string {
 	return getLanguage(language) + spaceDelimiter + name
 }
 
-func getLanguage(language string) string {
-	languageHelloPrefix := englishHelloPrefix
+func getLanguage(language string) (languageHelloPrefix string) {
 	switch language {
 	case "French":
 		languageHelloPrefix = frenchHelloPrefix
 	case "Spanish":
 		languageHelloPrefix = spanishHelloPrefix
+	default:
+		languageHelloPrefix = englishHelloPrefix
 	}
-	return languageHelloPrefix
+	return
 }
 
 func main() {
